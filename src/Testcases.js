@@ -1,10 +1,6 @@
 import React from "react";
 
 class Testcases extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   onChangeInput = (e) => {
     const testcases = this.props.testcases.slice()
     testcases[e.target.parentNode.getAttribute('index')][e.target.className] = e.target.value
